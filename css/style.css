@@ -448,6 +448,7 @@ main {
 
 .plans-container--slider {
   display: flex;
+  width: 100%;
   height: auto;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -456,8 +457,9 @@ main {
 }
 .plans-container--card {
   position: relative;
+  flex-shrink: 1;
   min-width: 190px;
-  max-width: 300px;
+  flex-basis: 300px;
   min-height: 247px;
   scroll-snap-align: center;
   background-color: var(--just-white);
@@ -466,6 +468,7 @@ main {
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .plans-container--card .card--header {
@@ -508,8 +511,9 @@ main {
 }
 
 .plan-card--description {
-  width: 95%;
+  width: 100%;
   font-size: 1.2rem;
+  padding: 5px;
   color: #757575;
 }
 .plan-card--buttom {
